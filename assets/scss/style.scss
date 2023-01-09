@@ -4,3 +4,15 @@
 @use "components/header";
 @use "components/skills";
 @use "components/about";
+
+@media (min-height: 601px) {
+  .skills__container {
+    grid-auto-rows: calc(33.333vh - 13.3333333333px);
+  }
+}
+
+@media (max-height: 600px) {
+  .skills__container {
+    grid-auto-rows: calc(200px - 13.3333333333px);
+  }
+}
