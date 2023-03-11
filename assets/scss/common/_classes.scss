@@ -9,7 +9,7 @@
   border-width: 2px;
   border-style: solid;
   padding: 0.5em 1em;
-  font-size: 1.125rem;
+
   letter-spacing: 0.1em;
   transition: background-color 0.25s;
 
@@ -20,15 +20,37 @@
   &--light {
     background-color: rgba($color-white, 0.1);
     border-color: $color-white;
-    min-width: 250px;
-    min-height: 60px;
+
+    @include lg-min {
+      font-size: 1.125rem;
+      min-width: 250px;
+      min-height: 60px;
+    }
+
+    @include lg-md {
+      min-width: 200px;
+      min-height: 50px;
+    }
+
+    @include md {
+      min-width: 170px;
+      min-height: 40px;
+    }
   }
 
   &--primary {
     background-color: rgba($color-primary, 0.8);
     border-color: $color-primary;
-    min-width: 350px;
     min-height: 60px;
+    font-size: 1.125rem;
+
+    @include sm-min {
+      min-width: 350px;
+    }
+
+    @include sm {
+      min-width: 100%;
+    }
   }
 }
 

@@ -9,8 +9,15 @@
     margin: 0;
     z-index: 1;
 
-    font-size: 1.25rem;
     letter-spacing: 0.1em;
+
+    @include md-min {
+      font-size: 1.25rem;
+    }
+
+    @include md {
+      font-size: 1.125rem;
+    }
   }
 
   &__link {
