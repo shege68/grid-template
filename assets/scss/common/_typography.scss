@@ -8,9 +8,10 @@
 }
 
 html {
+  overflow-y: scroll;
+
   font-family: $font-main;
   font-size: $font-size;
-  overflow-y: scroll;
 }
 
 body {
@@ -20,18 +21,17 @@ body {
 
 h1 {
   letter-spacing: 0.08em;
-  line-height: 1.2em;
-  font-weight: 300;
+
   font-family: $font-header;
+  font-weight: 300;
+  line-height: 1.2em;
 
   @include lg-min {
     font-size: 3.75rem;
   }
-
   @include lg-md {
     font-size: 40px;
   }
-
   @include md {
     font-size: 30px;
   }
@@ -41,9 +41,10 @@ h2 {
   font-family: $font-header;
 }
 
-h3 {}
+
 
 a {
   text-decoration: none;
+
   color: $color-white;
 }
