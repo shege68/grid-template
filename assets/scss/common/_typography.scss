@@ -29,9 +29,11 @@ h1 {
   @include lg-min {
     font-size: 3.75rem;
   }
+
   @include lg-md {
     font-size: 40px;
   }
+
   @include md {
     font-size: 30px;
   }
@@ -39,9 +41,37 @@ h1 {
 
 h2 {
   font-family: $font-header;
+  line-height: 1.2em;
+  letter-spacing: 0.1em;
+
+  color: $color-primary;
+
+  @include lg-min {
+    margin-bottom: 3rem;
+
+    font-size: 2.5rem;
+  }
+
+  @include lg-md {
+    margin-bottom: 2.625rem;
+
+    font-size: 2rem;
+  }
+
+  @include md-sm {
+    margin-bottom: 2.25rem;
+
+    font-size: 1.5rem;
+  }
+
+  @include sm {
+    margin-bottom: 2.25rem;
+
+    text-align: center;
+
+    font-size: 1.5rem;
+  }
 }
-
-
 
 a {
   text-decoration: none;
