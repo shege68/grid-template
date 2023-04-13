@@ -8,13 +8,14 @@
 
   padding: 0.5em 1em;
 
-  transition: background-color 0.25s;
+  transition: background-color 0.5s, border-color 0.5s, opacity 0.5s;
   letter-spacing: 0.1em;
 
   border-width: 2px;
   border-style: solid;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $color-accent;
   }
 
@@ -28,10 +29,12 @@
 
       font-size: 1.125rem;
     }
+
     @include lg-md {
       min-width: 200px;
       min-height: 50px;
     }
+
     @include md {
       min-width: 170px;
       min-height: 40px;
@@ -49,6 +52,7 @@
     @include sm-min {
       min-width: 350px;
     }
+
     @include sm {
       min-width: 100%;
     }
