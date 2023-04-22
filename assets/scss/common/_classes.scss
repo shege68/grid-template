@@ -29,12 +29,10 @@
 
       font-size: 1.125rem;
     }
-
     @include lg-md {
       min-width: 200px;
       min-height: 50px;
     }
-
     @include md {
       min-width: 170px;
       min-height: 40px;
@@ -52,7 +50,6 @@
     @include sm-min {
       min-width: 350px;
     }
-
     @include sm {
       min-width: 100%;
     }

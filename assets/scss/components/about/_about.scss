@@ -2,31 +2,28 @@
 @use "../../mixins" as *;
 
 .about {
+  letter-spacing: 0.055em;
+
   background-color: $color-gray-light;
 
-  letter-spacing: 0.055em;
   @extend %section;
 
   &__container {
     display: grid;
 
     @extend %container;
-
     @include lg-min {
       gap: $gap-x5;
       grid-template-columns: 1fr 271px;
     }
-
     @include lg-md {
       gap: $gap-x2;
       grid-template-columns: 1fr 271px;
     }
-
     @include md-sm {
       gap: $gap;
       grid-template-columns: 1fr 236px;
     }
-
     @include sm {
       gap: $gap;
       grid-template-columns: 1fr;
@@ -58,15 +55,12 @@
           @include lg-min {
             right: -$gap * 2.5;
           }
-
           @include lg-md {
             right: -$gap;
           }
-
           @include md-sm {
             right: -$gap-sm;
           }
-
           @include sm {
             display: none;
           }
