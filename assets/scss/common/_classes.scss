@@ -48,7 +48,7 @@
     font-size: 1.125rem;
 
     @include sm-min {
-      min-width: 350px;
+      width: 350px;
     }
     @include sm {
       min-width: 100%;

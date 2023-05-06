@@ -894,7 +894,7 @@ input:focus {
     min-width: 350px;
   }
   .btn--primary {
-    min-width: 350px;
+    width: 350px;
   }
   .skills {
     padding: 10px;
